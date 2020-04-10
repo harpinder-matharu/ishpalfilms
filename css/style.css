@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Utilities */
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.l-heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    /* padding-bottom: 1rem; */
+}
+.xl-heading{
+    font-size: 5rem;
+    /* font-weight: bolder; */
+}
+.btn-transparent{
+    text-align: center;
+    font-size: .80rem;
+    border: #fff solid 2px;
+    padding: .5rem 4rem;
+    color: #fff;
+}
+.current{
+    background: rgba(51, 51, 51, 0.4);
+}
+/* Navigaton bar */
+#navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+    color: #fff;
+    padding: 1rem;
+}
+#navbar .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+#navbar .logo .logo-img{
+    background: url(../images/LOGO.png) no-repeat center center/cover;
+    width: 2rem;
+    height: 2rem;
+}
+#navbar .logo .logo-text{
+    flex: 2;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2;
+}
+
+#navbar ul li a{
+    color: #fff;
+    margin: 0.25rem;
+    padding: 0.75rem;
+}
+#navbar ul li a:hover{
+    background: rgba(51, 51, 51, 0.4);
+}
+
+/* Section: Home */
+#home{
+    position: relative;
+    background: url(../images/home.jpg) no-repeat center center/cover;
+    height: 100vh;
+    top: -4rem;
+    color: #ddd;
+}
+#home .home-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgba(0, 0, 0, .5); */
+}
+
+/* Section: About */
+#about{
+    position: relative;
+    background: #333 ;
+    height: 100vh;
+    top: -4rem;
+    color: #ddd;
+    display: flex;
+    flex-basis: 50%;
+}
+#about .about-left{
+    background: url(../images/aboutLeft.jpg) no-repeat center center/cover;
+    flex: 2;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#about .about-left .about-text{
+    opacity: 1;
+    padding: 2rem;
+    text-align:  right;
+    border-right: #fff solid 3px;
+    margin: 0 2rem;
+    line-height: 1.5;
+}
+#about .about-right{
+    background: url(../images/aboutRight.jpg) no-repeat center center/cover;
+    flex: 1;
+    height: 100%;
+}
