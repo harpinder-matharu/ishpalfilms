@@ -1,30 +1,177 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Ishpalfilms</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-      <!-- Navigation Bar -->
-      <nav id="navbar"> 
-          <div class="logo">
-            <div class="logo-img"></div>
-            <h1 class="logo-text">I S H P A L&nbsp;&nbsp;F I L M S</h1>
-          </div>
-          <ul>
-              <li><a class="current" href="#Home">HOME</a></li>
-              <li><a href="about.html">ABOUT US</a></li>
-              <li><a href="#GALLERY">GALLERY</a></li>
-              <li><a href="#VFX">VFX</a></li>
-              <li><a href="#CONTACT">CONTACT US</a></li>
-          </ul>
-      </nav>        
-      <!-- Home -->
-      <section id="home">
-        <div class="home-text">
-          <h1 class="l-heading">I S H P A L&nbsp;&nbsp;F I L M S</h1>
-          <a href="" class="btn-transparent">L E A R N&nbsp;&nbsp;M O R E</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <script src="https://kit.fontawesome.com/c96ce43d88.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="faviconIshpal.ico">
+  <title>NewsGrid | Latest News</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="container">
+      <img src="img/logo.png" alt="NewsGrid" class="logo">
+      <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">VISUAL FX</a></li>
+        <li><a href="#">DI GRADING</a></li>
+        <li><a href="#">PHOTOGRAPHY</a></li>
+        <li><a href="#">MOTION GFX</a></li>
+        <li><a href="#">POSTERS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <header id="showcase">
+    <div class="container">
+      <div class="showcase-container">
+        <div class="showcase-content">
+          <h1 class="l-heading">EXCELLENCE</h1>
+          <h1>IN EVERY TAKE</h1>
+          <p>I was always a filmmaker before I was anything else. If I was always anything, I was a storyteller, and it never really made much of a diffrence to me what medium I worked in.</p>
+          <a href="article.html" class="btn btn-primary">Read More</a>
         </div>
-      </section>
-    </body>
+      </div>
+    </div>
+  </header>
+
+  <!-- Productions -->
+  <section id="production" class="bg-light py-1">
+    <div class="container">
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-university fa-2x"></i>
+          <div>
+            <h3>Investment Bancking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi!</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div>
+            <h3>Portfolio Management</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi!</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax & Custodial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi!</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax & Custodial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Articles -->
+  <!-- <section id="home-articles" class="py-2">
+    <div class="container">
+      <h2>Editor Picks</h2>
+      <div class="articles-container">
+        
+        <article class="card">
+          <img src="img/articles/ent1.jpg" alt="">
+          <div>
+            <div class="category category-ent">Entertainment</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+          </div>
+        </article>
+        
+        <article class="card bg-dark">
+          <div class="category category-sports">Sports</div>
+          <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/articles/tech1.jpg" alt="">
+          <div class="category category-tech">Technology</div>
+          <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+        </article>
+        
+        <article class="card">
+          <div class="category category-sports">Sports</div>
+          <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+          <img src="img/articles/sports1.jpg" alt="">
+        </article>
+        
+        <article class="card">
+          <img src="img/articles/tech2.jpg" alt="">
+          <div class="category category-tech">Technology</div>
+          <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+        </article>
+        
+        <article class="card bg-primary">
+          <div class="category category-sports">Sports</div>
+          <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+        </article>
+        
+        <article class="card">
+          <div>
+            <div class="category category-ent">Entertainment</div>
+            <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat adipisci. Error vero cupiditate incidunt impedit quos tempore suscipit veniam!</p>
+          </div>
+          <img src="img/articles/ent2.jpg" alt="">
+        </article>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-primary py-2">
+    <div class="container footer-container" >
+      <div>
+        <img  src="img/logo.png" alt="">
+        <h2>OUR SKILLS</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt repellendus velit libero, nesciunt dolore quas labore cum voluptatum dolorem sint, voluptates quia aut consequatur at!</p>
+        <a href="#" class="btn btn-dark">OUR SERVICES</a>
+      </div>
+      <div>
+        <ul class="list">
+          <li><a href="#">ADOBE PHOTOSHOP</a></li>
+          <li><a href="#">ADOBE AFTER EFFECT</a></li>
+          <li><a href="#">ADOBE PREMIER PRO</a></li>
+          <li><a href="#">ADOBE ILLUSTRATOR</a></li>
+          <li><a href="#">DAVINCI RESOLVE</a></li>
+          <li><a href="#">CINEMA 4D</a></li>
+          <li><a href="#">PHOTOGRAPHY</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="black-footer bg-dark"></div>
+</body>
 </html>
+
+<!-- 
+  <div class="social">
+        <a href="https://facebook.com" target="_blank"><i class="fab 
+        fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab 
+        fa-twitter fa-2x"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab 
+        fa-instagram fa-2x"></i></a>  
+        <a href="https://youtube.com" target="_blank"><i class="fab 
+        fa-youtube fa-2x"></i></a>  
+      </div>
+ -->
