@@ -4,9 +4,10 @@ font-family: 'Lato', sans-serif; */
 :root{
   --primary-color: #8f1b1b;
   --secondary-color: #f99500;
-  --light-color: #777;
+  --light-color: #888;
   --Vlight-color: #ccc;
-  --dark-color: #000;
+  --dark-color: #0a0a0a;
+
   --light-dark-color: #444;
   --max-width: 1100px;
 }
@@ -26,11 +27,20 @@ body{
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background: var(--dark-color);
+  color: #ccc;
 }
 
 a{
   text-decoration: none;
   color: var(--Vlight-color);
+  font-size: 0.9rem;
+}
+
+p{
+  font-size: .9rem;
+}
+.p-grey{
+  color: var(--light-color);
 }
 
 ul{
@@ -39,6 +49,8 @@ ul{
 
 img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -73,10 +85,11 @@ p{
   display: inline-block;
   border: none;
   background: var(--dark-color);
-  color: #fff;
+  color: var(--light-color);
   padding: .5rem 1.5rem;
   text-align: center;
-  /* border-radius: 5px; */
+  border-radius: 5px;
+  font-size: 9.rem;
 }
 .btn-light{ background: var(--light-color); }
 .btn-light-dark{ background: var(--light-dark-color); }
@@ -94,12 +107,37 @@ p{
 }
 
 .card{
-  background: #fff;
-  padding: 1rem;
+  background: #202020;
 }
-.bg-dark{ 
-  background: var(--dark-color);
-  color: #fff;
+.card-text1{
+  padding: 2rem;
+  position: relative;
+}
+.card-text1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.33%;
+  padding-right: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.card-text2{
+  padding: 2rem;
+  position: relative;
+}
+.card-text2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33.33%;
+  padding-right: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.bg-light{ 
+  background:  #202020;
+  color: var(--light-color);
 }
 .bg-white{ 
   background: #fff;
@@ -150,13 +188,17 @@ p{
 }
 
 .l-heading{
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
 .m-heading{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.s-heading{
+  font-size: .9rem;
   color: #fff;
 }
 /* navigation */
@@ -167,11 +209,11 @@ p{
   z-index: 2;
 }
 #main-nav{
-  background: #000000;
+  background: var(--dark-color);
 }
 #main-nav .container{
   display: grid;
-  grid-template-columns: 1fr 6fr; 
+  grid-template-columns: 1fr 8fr; 
   align-items: center;
   padding: 1rem;
 }
@@ -186,18 +228,18 @@ p{
 }
 
 #main-nav ul li a{
-  padding: 0.75rem;
-  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  /* font-weight: bold; */
+  font-size: 0.9rem;
 }
 
 #main-nav ul li a.current{
-  background: var(--primary-color);
-  color: #fff;
+  color: var(--primary-color);
 }
 
 #main-nav ul li a:hover{
-  background: var(--light-color);
-  color: var(--dark-color);
+  background: #111;
+  color: #fff;
 }
 
 #main-nav .social{
@@ -224,7 +266,7 @@ p{
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .9;
+  /* opacity: .9; */
 }
 
 #showcase .showcase-container{
@@ -242,6 +284,9 @@ p{
 }
 
 /* production */
+#production{
+  background: var(--dark-color);
+}
 #production .items{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -252,6 +297,7 @@ p{
 #production .items .item{
   /* text-align: center; */
   padding: 0;
+  padding-right: 1rem;
   position: relative;
 
 }
@@ -280,7 +326,7 @@ p{
   color: #fff;
 }
 #production .items .item i{
-  background: #000;
+  background: var(--dark-color);
   color: var(--light-color);
   padding: 1rem;
   border-radius: 50%;
@@ -289,25 +335,16 @@ p{
 }
 /* Home Articles */
 
+#home-articles{
+  background-color: #202020;
+}
 #home-articles .articles-container{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 1rem;
-}
-
-#home-articles .articles-container > *:first-child{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 1rem;
-  grid-column: 1 / span 2;
-  align-items: center;
+  grid-template-columns: repeat(4,1fr);
 }
 
 #home-articles .articles-container >*:last-child{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 1rem;
-  grid-column: 2/span 2; /* start from second column and ends at after two column*/
+  grid-column: 3/span 2; /* start from second column and ends at after two column*/
 }
 
 /* Main Footer */
@@ -321,15 +358,16 @@ p{
   grid-gap: 1.5rem;
 }
 
-.black-footer{
-  height: 2.5rem;
-}
 #main-footer .footer-container input{
   width: 90%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+.black-footer{
+  height: 2.5rem;
+  background: var(--dark-color);
+}
 /* Section: About us */
 #about-us .container{
   display: grid;
